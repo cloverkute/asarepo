@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Deploy website on push
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+        
+      - name: Set server and directory
+        run: |
+          echo "SERVER=will0905.xsrv.jp" >> $GITHUB_ENV
+          echo "USERNAME=will0905" >> $GITHUB_ENV
+          echo "PASSWORD=willmorimori" >> $GITHUB_ENV
+          echo "SERVER_DIR=/will0905.xsrv.jp/public_html/asarepo/" >> $GITHUB_ENV
+  
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ env.SERVER }}
+          username: ${{ env.USERNAME }}
+          password: ${{ env.PASSWORD }}
+          server-dir: ${{ env.SERVER_DIR }}

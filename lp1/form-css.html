@@ -24,7 +24,9 @@
   <title>%%title%%</title>
   <style type="text/css">
     html, body {
-      height: 100%;
+      font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", "Yu Gothic", YuGothic, "Meiryo", sans-serif;
+      color: #040404;
       margin: 0;
     }
 
@@ -52,12 +54,12 @@
 
     .pd_header .logo {
       display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
       margin-bottom: 50px;
       padding-bottom: 15px;
       border-bottom: 3px solid #ccc;
-      align-items: center;
     }
 
     .site_logo img,
@@ -66,11 +68,18 @@
       height: auto;
     }
 
-    @media screen and (max-width: 768px) {
-      .site_logo {
-        width: 30%;
-      }
+    .site_logo > span > strong {
+      font-size: 18px;
+    }
 
+    .pd_note {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      /*.site_logo {*/
+      /*  width: 30%;*/
+      /*}*/
       .company_logo {
         width: 30%;
       }
@@ -163,6 +172,7 @@
     form.form p label {
       display: block;
       font-size: 12px;
+      color: #040404 !important;
     }
 
     form.form p .field-label {
@@ -188,11 +198,12 @@
 
     .any .field-label::after,
     .required .field-label::after {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #fff;
       font-size: 10px;
       font-weight: normal;
-      padding: 3px 6px;
       border-radius: 3px;
       width: 35px;
       height: 20px;
@@ -206,7 +217,7 @@
 
     .required .field-label::after {
       content: "必須";
-      background-color: #db6355;
+      background-color: #F54F28;
     }
 
     form.form .form-field.input-inline_left {
@@ -242,7 +253,7 @@
     a[target="_blank"]::after {
       content: "";
       display: inline-block;
-      background-image: url("https://will-llc.com/arr_hoso.png");
+      background-image: url("https://will-llc.com/arr_hoso.svg");
       background-size: cover;
       width: 12px;
       height: 12px;
@@ -307,6 +318,10 @@
       cursor: pointer;
     }
 
+    .submit input:hover {
+      opacity: 0.7;
+    }
+
     form.form .policy-check {
       background-color: #e8e8e8;
       padding: 40px 20px;
@@ -346,8 +361,9 @@
     }
 
     form.form .errors {
-      color: #cb2e25;
-      border: 1px solid #cb2e25;
+      font-size: 14px;
+      color: #F54F28;
+      border: 1px solid #F54F28;
       padding: 10px;
       border-radius: 5px;
       margin: 0 60px 30px;
@@ -356,9 +372,9 @@
 
     form.form p.error.no-label:not(.form-field) {
       box-sizing: border-box;
-      color: #cb2e25;
+      color: #F54F28;
       clear: both;
-      margin: 0 0 30px;
+      margin: 0 0 20px;
       padding: 10px 0 0;
       font-size: 14px;
     }
@@ -391,9 +407,10 @@
       }
 
       form.form p.error.no-label:not(.form-field) {
-        color: #cb2e25;
+        font-size: 12px;
+        color: #F54F28;
         clear: both;
-        margin: 0 0 30px;
+        margin: 0 0 20px;
         padding: 10px 0 0;
       }
 
@@ -532,12 +549,6 @@
         color: #000000;
       }
     </style>
-
-
-    <div class="form-header-title">お問い合わせ・資料DL・無料トライアル</div>
-
-    <p class="form-header-subtitle">以下のフォームへ必須事項をご記入ください。<br/>
-ご記入いただいたメールアドレス宛に資料ダウンロードURLを自動送付いたします。</p>
 
 
     <div class="form-contents">
@@ -705,6 +716,30 @@
 <script type="text/javascript" src="https://www.b-story.co.jp/stande/core/stande-1.0.7.js"></script>
 <script type="text/javascript"
         src="https://www2.shinwart.co.jp/l/907272/2021-03-30/kx2b/907272/1617084051lBdWmsot/stande_setting.js"></script>
+<script>
+  function postFormHeight() {
+    try {
+      const height = document.documentElement.scrollHeight;
+      window.parent.postMessage(
+        {type: 'shinwartFormHeight', height: height},
+        '*'
+      );
+    } catch (e) {
+      console.error('postFormHeight error:', e);
+    }
+  }
+
+  window.addEventListener('load', postFormHeight);
+  window.addEventListener('resize', postFormHeight);
+  const observer = new MutationObserver(() => {
+    postFormHeight();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+</script>
 </body>
 </html>
 

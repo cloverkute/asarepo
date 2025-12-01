@@ -39,8 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!target) return;
     const header = document.querySelector("header");
     const headerHeight = header ? header.offsetHeight : 0;
-    const targetTop =
-      target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+    const targetTop = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
     window.scrollTo({
       top: targetTop,
       behavior: "smooth",
@@ -194,7 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
         this.classList.remove('is-active');
         closeSmoothly(targetPanel);
 
-        // Lệnh quan trọng cho di động: Loại bỏ trạng thái focus/active sau khi đóng
         this.blur();
 
         this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -202,11 +200,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Mở panel
       this.classList.add('is-active');
       openSmoothly(targetPanel);
 
-      // Lệnh quan trọng cho di động: Loại bỏ trạng thái focus/active sau khi mở
       this.blur();
 
       this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -250,10 +246,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const link = document.getElementById('anchor-link');
+  const MOBILE_BREAKPOINT = 768;
 
   if (link) {
     link.addEventListener('click', function(event) {
-      const targetSection = document.getElementById('section-function');
+      const screenWidth = window.innerWidth;
+
+      let targetSectionId;
+
+      if (screenWidth <= MOBILE_BREAKPOINT) {
+        targetSectionId = 'func-sp-4-btn';
+      } else {
+        targetSectionId = 'section-function';
+      }
+
+      const targetSection = document.getElementById(targetSectionId);
       if (targetSection) {
         targetSection.scrollIntoView({
           behavior: 'smooth',
@@ -268,7 +275,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const mobileButton = document.querySelector('.function-nav-btn-sp[data-target="func-sp-4"]');
       if (mobileButton) {
-        mobileButton.click();
+        if (!mobileButton.classList.contains('is-active')) {
+          mobileButton.click();
+        }
       }
     });
   }
@@ -280,3 +289,22 @@ function toggleIcon(buttonElement) {
     toggleButton.classList.toggle('active');
   }
 }
+
+window.addEventListener('message', function (event) {
+  const data = event.data;
+
+  if (!data || data.type !== 'shinwartFormHeight') return;
+
+  const iframes = document.querySelectorAll('.shinwart-form');
+  const maxHeight = 600;
+  const isMobile = window.matchMedia('(max-width: 1120px)').matches;
+
+  iframes.forEach(el => {
+    if (isMobile) {
+      el.style.height = maxHeight + 'px';
+    } else {
+      const newHeight = Math.min(data.height, maxHeight);
+      el.style.height = newHeight + 'px';
+    }
+  });
+});

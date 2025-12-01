@@ -1,0 +1,561 @@
+【レイアウトテンプレート】
+<!DOCTYPE html>
+<html>
+	<head>
+    <!-- Google Tag Manager -->
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+     })(window,document,'script','dataLayer','GTM-NZBX9F6');</script>
+    <!-- End Google Tag Manager -->
+		<base href="https://www2.shinwart.co.jp" >
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+		<meta name="description" content="%%description%%"/>
+		<title>%%title%%</title>
+        <style type="text/css">
+            html, body {
+              font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+              "Helvetica Neue", "Yu Gothic", YuGothic, "Meiryo", sans-serif;
+              color: #040404;
+              margin: 0;
+            }
+
+            #contact_wrap {
+              max-width: 900px;
+              margin: 0 auto;
+            }
+
+            @media screen and (max-width: 768px) {
+              #contact_wrap {
+                border: none;
+              }
+            }
+
+            /* header */
+            .pd_header {
+              padding: 0 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+              .pd_header {
+                padding: 0 10px;
+              }
+            }
+
+            .pd_header .logo {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 30px;
+              margin-bottom: 50px;
+              padding-bottom: 15px;
+              border-bottom: 3px solid #ccc;
+            }
+
+            .site_logo img,
+            .company_logo img {
+              max-width: 100%;
+              height: auto;
+            }
+
+            .site_logo > span > strong {
+              font-size: 18px;
+            }
+
+            .pd_note {
+              font-size: 12px;
+            }
+
+            @media screen and (max-width: 768px) {
+              /*.site_logo {*/
+              /*  width: 30%;*/
+              /*}*/
+              .company_logo {
+                width: 30%;
+              }
+            }
+
+            .pd_con_title {
+              font-size: 26px;
+              font-weight: normal;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+              margin: 0 60px 30px;
+              display: flex;
+              align-items: center;
+            }
+
+            @media screen and (max-width: 768px) {
+              .pd_con_title {
+                font-size: 20px;
+              }
+            }
+
+            .pd_con_title::before {
+              content: "";
+              display: block;
+              width: 28px;
+              height: 28px;
+              background: url(https://www2.shinwart.co.jp/l/907272/2021-07-01/2ms1t/907272/16251340204ilZjmW7/icon_4.png) no-repeat;
+              background-size: cover;
+            }
+
+            @media screen and (max-width: 768px) {
+              .pd_con_title {
+                margin: 0 10px 20px;
+              }
+            }
+
+            /* footer */
+            .pd_footer {
+              background-color: #6ad6a8;
+              color: #fff;
+              text-align: center;
+              font-size: 12px;
+              padding: 5px;
+              margin-top: 30px;
+            }
+
+            /* form */
+            form .form-header-title {
+              text-align: center;
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            form .form-header-subtitle {
+              text-align: center;
+              font-size: 10px;
+              font-weight: bold;
+            }
+
+            form.form .form-contents {
+              padding: 0 30px;
+              margin-top: 21px;
+            }
+
+            @media screen and (max-width: 520px) {
+              form.form .form-contents {
+                padding: 0 10px;
+              }
+            }
+
+            form.form .form-field {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin: 0 0 10px;
+              clear: both;
+            }
+
+            @media screen and (max-width: 768px) {
+              form.form .form-field {
+                margin: 0 0 10px;
+              }
+            }
+
+            form.form .input-wrapper {
+              display: block;
+              flex: 1;
+            }
+
+            form.form p label {
+              display: block;
+              font-size: 12px;
+              color: #040404 !important;
+            }
+
+            form.form p .field-label {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 150px;
+              font-weight: bold;
+              gap: 10px;
+            }
+
+            form.form .text,
+            form.form .select,
+            form.form .standard {
+              font-size: 12px;
+              border: 1px solid #CECECE;
+              border-radius: 6px;
+              padding: 8px;
+              width: 100%;
+              box-sizing: border-box;
+              background-color: #F6F6F6;
+            }
+
+            .any .field-label::after,
+            .required .field-label::after {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-size: 10px;
+              font-weight: normal;
+              border-radius: 3px;
+              width: 35px;
+              height: 20px;
+              box-sizing: border-box;
+            }
+
+            .any .field-label::after {
+              content: "任意";
+              background-color: #3B4043;
+            }
+
+            .required .field-label::after {
+              content: "必須";
+              background-color: #F54F28;
+            }
+
+            form.form .form-field.input-inline_left {
+              display: inline-block;
+              width: 40%;
+              margin-right: 10px;
+            }
+
+            form.form .form-field.input-inline_right {
+              display: inline-block;
+              width: 40%;
+              margin-left: 0;
+              margin-right: 0;
+            }
+
+            form.form .form-field.pd-checkbox {
+              align-items: flex-start;
+              margin-top: 16px;
+              flex-wrap: wrap;
+            }
+
+            form.form .form-field.pd-checkbox .hpdf-description {
+              width: 100%;
+              font-size: 12px;
+              display: flex;
+              justify-content: center;
+            }
+
+            form.form .form-field.pd-checkbox .hpdf-description a {
+              color: #0872B9;
+            }
+
+            a[target="_blank"]::after {
+              content: "";
+              display: inline-block;
+              background-image: url("https://will-llc.com/arr_hoso.svg");
+              background-size: cover;
+              width: 12px;
+              height: 12px;
+              margin-left: 5px;
+              margin-right: 5px;
+              margin-bottom: -2px;
+            }
+
+            input[type="checkbox"] {
+              flex-shrink: 0;
+              width: 20px;
+              height: 20px;
+              appearance: none;
+              -webkit-appearance: none;
+              background: #F6F6F6;
+              border: 1px solid #CECECE;
+              border-radius: 6px;
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              margin: 0 5px 10px 0;
+            }
+
+            input[type="checkbox"]:checked {
+              background: #F6F6F6;
+              border-color: #CECECE;
+            }
+
+            input[type="checkbox"]:checked::after {
+              content: "";
+              position: absolute;
+              left: 6px;
+              top: 2px;
+              width: 6px;
+              height: 12px;
+              border: solid #555;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+
+            input[type="checkbox"] + label {
+              margin-bottom: 10px;
+            }
+
+            .submit {
+              text-align: center;
+              margin-top: 30px;
+              margin-bottom: 0;
+            }
+
+            .submit input {
+              background-color: #F54F28;
+              color: #fff;
+              font-size: 18px;
+              font-weight: bold;
+              width: 300px;
+              text-align: center;
+              padding: 13px;
+              border: none;
+              margin: 0 auto;
+              border-radius: 25px;
+              cursor: pointer;
+            }
+
+            .submit input:hover {
+              opacity: 0.7;
+            }
+
+            form.form .policy-check {
+              background-color: #e8e8e8;
+              padding: 40px 20px;
+              border-radius: 5px;
+            }
+
+            form.form .policy-check .field-label {
+              padding-left: 0;
+            }
+
+            form.form .policy-check .privacy-policy-text {
+              border: 1px solid #5a5a5a;
+              background-color: #fff;
+              padding: 10px;
+              overflow: scroll;
+              width: calc(100% - 20px);
+              height: 200px;
+              border-radius: 5px;
+            }
+
+            form.form .policy-check .privacy-policy-text + .input-wrapper {
+              margin: 20px 0;
+              padding: 0;
+              text-align: center;
+            }
+
+            form.form .policy-check.error .privacy-policy-text + .input-wrapper {
+              margin-bottom: 0;
+            }
+
+            form.form .form-before-contents .errors {
+              margin-top: 20px;
+            }
+
+            form.form .form-field.error {
+              margin-bottom: 0;
+            }
+
+            form.form .errors {
+              font-size: 14px;
+              color: #F54F28;
+              border: 1px solid #F54F28;
+              padding: 10px;
+              border-radius: 5px;
+              margin: 0 60px 30px;
+              box-sizing: border-box;
+            }
+
+            form.form p.error.no-label:not(.form-field) {
+              box-sizing: border-box;
+              color: #F54F28;
+              clear: both;
+              margin: 0 0 20px;
+              padding: 10px 0 0;
+              font-size: 14px;
+            }
+
+            form.form textarea + p.error.no-label:not(.form-field),
+            form.form input + p.error.no-label:not(.form-field) {
+              padding: 10px 0;
+            }
+
+            form.form .description {
+              display: block;
+              width: calc(100% - 20px * 2);
+              padding: 10px 20px;
+            }
+
+            form.form .form-field.text_after .description {
+              width: auto;
+              display: inline-block;
+              padding: 0;
+            }
+
+            @media screen and (max-width: 520px) {
+              form.form .description {
+                width: calc(100% - 10px * 2);
+                padding: 10px 0;
+              }
+
+              form.form .errors {
+                margin: 0 10px 30px;
+              }
+
+              form.form p.error.no-label:not(.form-field) {
+                font-size: 12px;
+                color: #F54F28;
+                clear: both;
+                margin: 0 0 20px;
+                padding: 10px 0 0;
+              }
+
+              form.form .form-field p.error.no-label {
+                padding: 10px 0;
+              }
+            }
+
+            form.form .pd-checkbox.inline-flex .value {
+              display: flex;
+              flex-wrap: wrap;
+            }
+
+            form.form .pd-checkbox.inline-flex .value span {
+              display: flex;
+              margin-right: 30px;
+            }
+
+            form.form .pd-checkbox.inline-flex .value span:last-child {
+              margin-right: 0;
+            }
+
+            form.form .pd-checkbox.inline-flex-block .value {
+              display: block;
+            }
+
+            form.form .pd-checkbox.inline-flex-block .value span {
+              display: flex;
+              margin-right: 30px;
+            }
+
+            form.form .pd-checkbox.inline-flex-block .value span:last-child input[type="checkbox"],
+            form.form .pd-checkbox.inline-flex-block .value span:last-child input[type="checkbox"] + label {
+              margin-bottom: 0;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+        const $formFields = $('.form-field.has-placeholder');
+        $formFields.each(function(i, item) {
+            const $description = $(item).find('.hpdf-description')
+            if ($description.length) {
+            const placeholder_text = $description.text();
+            $description.hide();
+            $(item).find('.input-wrapper > input,.input-wrapper > textarea')
+                .attr('placeholder',placeholder_text);
+            }
+        });
+        const $policyElem = $('.form-field.policy-check');
+        if($policyElem.length) {
+            const $placeholder = $policyElem.find('.hpdf-description');
+            const placeholder_text = $placeholder.text();
+            $placeholder.hide();
+            $policyElem.find('.input-wrapper')
+            .before($('<div>')
+                .addClass('privacy-policy-text')
+                .html(nl2br(placeholder_text))
+            );
+        }
+        const inlineElements = [
+            ".input-inline_2-2.error",
+            ".input-inline_3-2.error",
+            ".input-inline_3-3.error"
+        ];
+        const errors = $(inlineElements.join(','));
+        errors.each(function(i, item){
+            const $errorMsg = $(item).nextAll('.error').first();
+            $errorMsg.remove();
+        });
+
+        $('.input-inline_2-1.error, .input-inline_3-1.error').each(function(i,item){
+            const $errorMsg = $(item).nextAll('.error.no-label:not(.form-field)').first();
+            const $newErrorMsg = $errorMsg.clone();
+            $errorMsg.remove();
+            const $lastElem = $(item).nextAll('.input-inline_2-2, .input-inline_3-3').first();
+            $lastElem.addClass('no-margin-bottom');
+            $lastElem.after($newErrorMsg);
+        });
+
+        const hr_errors = $('.error.after_hr:not(.input-inline_*)');
+        if(hr_errors.length) {
+            hr_errors.each(function(i,item){
+            const $error = $(item).nextAll('.error.no-label').first();
+            const $newError = $error.clone();
+            $error.remove();
+            $(item).append($newError);
+            $(item).find('.error.no-label').show();
+            });
+        }
+
+        const $privacy = $('.policy-check.error');
+        if($privacy.length) {
+            const $privacyError = $privacy.nextAll('.error.no-label').first();
+            const $newError = $privacyError.clone();
+            $privacy.append($newError);
+            $privacyError.remove();
+            $privacy.find('.error.no-label').show();
+        }
+
+        $('.required input[type=text],.required input[type=number],.required input[type=email],.required textarea, .required select').checkRequire();
+        });
+        const nl2br = function(str) {
+        return str.replace(/\r\n/g, "<br />").replace(/(\n|\r)/g, "<br />");
+        }
+
+        </script>
+        <link href="https://www.b-story.co.jp/stande/core/stande-1.0.7.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22579842-12"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-22579842-12');
+        </script>
+	</head>
+	<body>
+    <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZBX9F6"
+     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	    <div id="contact_wrap">
+		%%content%%
+		</div>
+		<script type="text/javascript" src="https://www.b-story.co.jp/stande/core/stande-1.0.7.js"></script>
+        <script type="text/javascript" src="https://www2.shinwart.co.jp/l/907272/2021-03-30/kx2b/907272/1617084051lBdWmsot/stande_setting.js"></script>
+	</body>
+	<script>
+      function postFormHeight() {
+        try {
+          const height = document.documentElement.scrollHeight;
+          window.parent.postMessage(
+            { type: 'shinwartFormHeight', height: height },
+            '*'
+          );
+        } catch (e) {
+          console.error('postFormHeight error:', e);
+        }
+      }
+
+      window.addEventListener('load', postFormHeight);
+      window.addEventListener('resize', postFormHeight);
+      const observer = new MutationObserver(() => {
+        postFormHeight();
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    </script>
+</html>
+
