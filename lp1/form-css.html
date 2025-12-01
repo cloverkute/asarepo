@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-NZBX9F6');</script>
+  <!-- End Google Tag Manager -->
+  <base href="https://www2.shinwart.co.jp">
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+  <meta name="description" content="%%description%%"/>
+  <title>%%title%%</title>
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #contact_wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      #contact_wrap {
+        border: none;
+      }
+    }
+
+    /* header */
+    .pd_header {
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .pd_header {
+        padding: 0 10px;
+      }
+    }
+
+    .pd_header .logo {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #ccc;
+      align-items: center;
+    }
+
+    .site_logo img,
+    .company_logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .site_logo {
+        width: 30%;
+      }
+
+      .company_logo {
+        width: 30%;
+      }
+    }
+
+    .pd_con_title {
+      font-size: 26px;
+      font-weight: normal;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin: 0 60px 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .pd_con_title {
+        font-size: 20px;
+      }
+    }
+
+    .pd_con_title::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: url(https://www2.shinwart.co.jp/l/907272/2021-07-01/2ms1t/907272/16251340204ilZjmW7/icon_4.png) no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+      .pd_con_title {
+        margin: 0 10px 20px;
+      }
+    }
+
+    /* footer */
+    .pd_footer {
+      background-color: #6ad6a8;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+      margin-top: 30px;
+    }
+
+    /* form */
+    form .form-header-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    form .form-header-subtitle {
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    form.form .form-contents {
+      padding: 0 30px;
+      margin-top: 21px;
+    }
+
+    @media screen and (max-width: 520px) {
+      form.form .form-contents {
+        padding: 0 10px;
+      }
+    }
+
+    form.form .form-field {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px;
+      clear: both;
+    }
+
+    @media screen and (max-width: 768px) {
+      form.form .form-field {
+        margin: 0 0 10px;
+      }
+    }
+
+    form.form .input-wrapper {
+      display: block;
+      flex: 1;
+    }
+
+    form.form p label {
+      display: block;
+      font-size: 12px;
+    }
+
+    form.form p .field-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 150px;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    form.form .text,
+    form.form .select,
+    form.form .standard {
+      font-size: 12px;
+      border: 1px solid #CECECE;
+      border-radius: 6px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #F6F6F6;
+    }
+
+    .any .field-label::after,
+    .required .field-label::after {
+      display: inline-block;
+      color: #fff;
+      font-size: 10px;
+      font-weight: normal;
+      padding: 3px 6px;
+      border-radius: 3px;
+      width: 35px;
+      height: 20px;
+      box-sizing: border-box;
+    }
+
+    .any .field-label::after {
+      content: "任意";
+      background-color: #3B4043;
+    }
+
+    .required .field-label::after {
+      content: "必須";
+      background-color: #db6355;
+    }
+
+    form.form .form-field.input-inline_left {
+      display: inline-block;
+      width: 40%;
+      margin-right: 10px;
+    }
+
+    form.form .form-field.input-inline_right {
+      display: inline-block;
+      width: 40%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    form.form .form-field.pd-checkbox {
+      align-items: flex-start;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    form.form .form-field.pd-checkbox .hpdf-description {
+      width: 100%;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    form.form .form-field.pd-checkbox .hpdf-description a {
+      color: #0872B9;
+    }
+
+    a[target="_blank"]::after {
+      content: "";
+      display: inline-block;
+      background-image: url("https://will-llc.com/arr_hoso.png");
+      background-size: cover;
+      width: 12px;
+      height: 12px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: -2px;
+    }
+
+    input[type="checkbox"] {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      appearance: none;
+      -webkit-appearance: none;
+      background: #F6F6F6;
+      border: 1px solid #CECECE;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      margin: 0 5px 10px 0;
+    }
+
+    input[type="checkbox"]:checked {
+      background: #F6F6F6;
+      border-color: #CECECE;
+    }
+
+    input[type="checkbox"]:checked::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 6px;
+      height: 12px;
+      border: solid #555;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    input[type="checkbox"] + label {
+      margin-bottom: 10px;
+    }
+
+    .submit {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    .submit input {
+      background-color: #F54F28;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      width: 300px;
+      text-align: center;
+      padding: 13px;
+      border: none;
+      margin: 0 auto;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    form.form .policy-check {
+      background-color: #e8e8e8;
+      padding: 40px 20px;
+      border-radius: 5px;
+    }
+
+    form.form .policy-check .field-label {
+      padding-left: 0;
+    }
+
+    form.form .policy-check .privacy-policy-text {
+      border: 1px solid #5a5a5a;
+      background-color: #fff;
+      padding: 10px;
+      overflow: scroll;
+      width: calc(100% - 20px);
+      height: 200px;
+      border-radius: 5px;
+    }
+
+    form.form .policy-check .privacy-policy-text + .input-wrapper {
+      margin: 20px 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    form.form .policy-check.error .privacy-policy-text + .input-wrapper {
+      margin-bottom: 0;
+    }
+
+    form.form .form-before-contents .errors {
+      margin-top: 20px;
+    }
+
+    form.form .form-field.error {
+      margin-bottom: 0;
+    }
+
+    form.form .errors {
+      color: #cb2e25;
+      border: 1px solid #cb2e25;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 0 60px 30px;
+      box-sizing: border-box;
+    }
+
+    form.form p.error.no-label:not(.form-field) {
+      box-sizing: border-box;
+      color: #cb2e25;
+      clear: both;
+      margin: 0 0 30px;
+      padding: 10px 0 0;
+      font-size: 14px;
+    }
+
+    form.form textarea + p.error.no-label:not(.form-field),
+    form.form input + p.error.no-label:not(.form-field) {
+      padding: 10px 0;
+    }
+
+    form.form .description {
+      display: block;
+      width: calc(100% - 20px * 2);
+      padding: 10px 20px;
+    }
+
+    form.form .form-field.text_after .description {
+      width: auto;
+      display: inline-block;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 520px) {
+      form.form .description {
+        width: calc(100% - 10px * 2);
+        padding: 10px 0;
+      }
+
+      form.form .errors {
+        margin: 0 10px 30px;
+      }
+
+      form.form p.error.no-label:not(.form-field) {
+        color: #cb2e25;
+        clear: both;
+        margin: 0 0 30px;
+        padding: 10px 0 0;
+      }
+
+      form.form .form-field p.error.no-label {
+        padding: 10px 0;
+      }
+    }
+
+    form.form .pd-checkbox.inline-flex .value {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    form.form .pd-checkbox.inline-flex .value span {
+      display: flex;
+      margin-right: 30px;
+    }
+
+    form.form .pd-checkbox.inline-flex .value span:last-child {
+      margin-right: 0;
+    }
+
+    form.form .pd-checkbox.inline-flex-block .value {
+      display: block;
+    }
+
+    form.form .pd-checkbox.inline-flex-block .value span {
+      display: flex;
+      margin-right: 30px;
+    }
+
+    form.form .pd-checkbox.inline-flex-block .value span:last-child input[type="checkbox"],
+    form.form .pd-checkbox.inline-flex-block .value span:last-child input[type="checkbox"] + label {
+      margin-bottom: 0;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      const $formFields = $('.form-field.has-placeholder');
+      $formFields.each(function (i, item) {
+        const $description = $(item).find('.hpdf-description')
+        if ($description.length) {
+          const placeholder_text = $description.text();
+          $description.hide();
+          $(item).find('.input-wrapper > input,.input-wrapper > textarea')
+            .attr('placeholder', placeholder_text);
+        }
+      });
+      const $policyElem = $('.form-field.policy-check');
+      if ($policyElem.length) {
+        const $placeholder = $policyElem.find('.hpdf-description');
+        const placeholder_text = $placeholder.text();
+        $placeholder.hide();
+        $policyElem.find('.input-wrapper')
+          .before($('<div>')
+            .addClass('privacy-policy-text')
+            .html(nl2br(placeholder_text))
+          );
+      }
+      const inlineElements = [
+        ".input-inline_2-2.error",
+        ".input-inline_3-2.error",
+        ".input-inline_3-3.error"
+      ];
+      const errors = $(inlineElements.join(','));
+      errors.each(function (i, item) {
+        const $errorMsg = $(item).nextAll('.error').first();
+        $errorMsg.remove();
+      });
+
+      $('.input-inline_2-1.error, .input-inline_3-1.error').each(function (i, item) {
+        const $errorMsg = $(item).nextAll('.error.no-label:not(.form-field)').first();
+        const $newErrorMsg = $errorMsg.clone();
+        $errorMsg.remove();
+        const $lastElem = $(item).nextAll('.input-inline_2-2, .input-inline_3-3').first();
+        $lastElem.addClass('no-margin-bottom');
+        $lastElem.after($newErrorMsg);
+      });
+
+      const hr_errors = $('.error.after_hr:not(.input-inline_*)');
+      if (hr_errors.length) {
+        hr_errors.each(function (i, item) {
+          const $error = $(item).nextAll('.error.no-label').first();
+          const $newError = $error.clone();
+          $error.remove();
+          $(item).append($newError);
+          $(item).find('.error.no-label').show();
+        });
+      }
+
+      const $privacy = $('.policy-check.error');
+      if ($privacy.length) {
+        const $privacyError = $privacy.nextAll('.error.no-label').first();
+        const $newError = $privacyError.clone();
+        $privacy.append($newError);
+        $privacyError.remove();
+        $privacy.find('.error.no-label').show();
+      }
+
+      $('.required input[type=text],.required input[type=number],.required input[type=email],.required textarea, .required select').checkRequire();
+    });
+    const nl2br = function (str) {
+      return str.replace(/\r\n/g, "<br />").replace(/(\n|\r)/g, "<br />");
+    }
+
+  </script>
+  <link href="https://www.b-story.co.jp/stande/core/stande-1.0.7.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22579842-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22579842-12');
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZBX9F6"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="contact_wrap">
+  <form accept-charset="UTF-8" method="post" action="https://www2.shinwart.co.jp/l/907272/2025-10-20/hy7fx" class="form"
+        id="pardot-form">
+
+    <style type="text/css">
+      form.form p label {
+        color: #000000;
+      }
+    </style>
+
+
+    <div class="form-header-title">お問い合わせ・資料DL・無料トライアル</div>
+
+    <p class="form-header-subtitle">以下のフォームへ必須事項をご記入ください。<br/>
+ご記入いただいたメールアドレス宛に資料ダウンロードURLを自動送付いたします。</p>
+
+
+    <div class="form-contents">
+
+      <p class="form-field any has-placeholder company pd-text required    ">
+
+        <label class="field-label" for="907272_191088pi_907272_191088">会社名</label>
+
+
+        <span class="input-wrapper"><input type="text" name="907272_191088pi_907272_191088"
+                                           id="907272_191088pi_907272_191088" value="" class="text" size="30"
+                                           maxlength="255" onchange="" onfocus=""/></span>
+
+        <span class="hpdf-description">会社名</span>
+
+      </p>
+      <div id="error_for_907272_191088pi_907272_191088" style="display:none"></div>
+
+
+      <p class="form-field any has-placeholder department pd-text required    ">
+
+        <label class="field-label" for="907272_191091pi_907272_191091">部署名</label>
+
+
+        <span class="input-wrapper"><input type="text" name="907272_191091pi_907272_191091"
+                                           id="907272_191091pi_907272_191091" value="" class="text" size="30"
+                                           maxlength="100" onchange="" onfocus=""/></span>
+
+        <span class="hpdf-description">部署名</span>
+
+      </p>
+      <div id="error_for_907272_191091pi_907272_191091" style="display:none"></div>
+
+
+      <p class="form-field any has-placeholder last_name pd-text required    ">
+
+        <label class="field-label" for="907272_191100pi_907272_191100">お名前</label>
+
+
+        <span class="input-wrapper"><input type="text" name="907272_191100pi_907272_191100"
+                                           id="907272_191100pi_907272_191100" value="" class="text" size="30"
+                                           maxlength="80" onchange="" onfocus=""/></span>
+
+        <span class="hpdf-description">姓名</span>
+
+      </p>
+      <div id="error_for_907272_191100pi_907272_191100" style="display:none"></div>
+
+
+      <p class="form-field has-placeholder email pd-text required    ">
+
+        <label class="field-label" for="907272_191106pi_907272_191106">メールアドレス</label>
+
+
+        <span class="input-wrapper"><input type="text" name="907272_191106pi_907272_191106"
+                                           id="907272_191106pi_907272_191106" value="" class="text" size="30"
+                                           maxlength="255" onchange="" onfocus=""/></span>
+
+        <span class="hpdf-description">勤務先メールアドレス</span>
+
+      </p>
+      <div id="error_for_907272_191106pi_907272_191106" style="display:none"></div>
+
+
+      <p class="form-field has-placeholder phone pd-text required    ">
+
+        <label class="field-label" for="907272_191109pi_907272_191109">連絡の取れる電話番号</label>
+
+
+        <span class="input-wrapper"><input type="text" name="907272_191109pi_907272_191109"
+                                           id="907272_191109pi_907272_191109" value="" class="text" size="30"
+                                           maxlength="40" onchange="" onfocus=""/></span>
+
+        <span class="hpdf-description">(例)03-0000-0000</span>
+
+      </p>
+      <div id="error_for_907272_191109pi_907272_191109" style="display:none"></div>
+
+
+      <p class="form-field any has-placeholder inline-flex-block Inquiry_type pd-checkbox     ">
+
+        <label class="field-label" for="907272_191085pi_907272_191085">資料請求の目的</label>
+
+
+        <span class="input-wrapper"><span class="value"><span><input type="checkbox"
+                                                                     name="907272_191085pi_907272_191085_1180704"
+                                                                     id="907272_191085pi_907272_191085_1180704"
+                                                                     value="1180704" onchange=""/><label class="inline"
+                                                                                                         for="907272_191085pi_907272_191085_1180704">サービスに興味がある</label></span><span><input
+            type="checkbox" name="907272_191085pi_907272_191085_1180707" id="907272_191085pi_907272_191085_1180707"
+            value="1180707" onchange=""/><label class="inline" for="907272_191085pi_907272_191085_1180707">自社のアルコールチェックおよび点呼管理に課題を感じている</label></span><span><input
+            type="checkbox" name="907272_191085pi_907272_191085_1180710" id="907272_191085pi_907272_191085_1180710"
+            value="1180710" onchange=""/><label class="inline"
+                                                for="907272_191085pi_907272_191085_1180710">商談・見積を希望する</label></span><span><input
+            type="checkbox" name="907272_191085pi_907272_191085_1180713" id="907272_191085pi_907272_191085_1180713"
+            value="1180713" onchange=""/><label class="inline"
+                                                for="907272_191085pi_907272_191085_1180713">無料トライアルを希望する</label></span></span></span>
+
+      </p>
+      <div id="error_for_907272_191085pi_907272_191085" style="display:none"></div>
+
+
+      <p class="form-field inline-flex-block CustomObject1618367162082 pd-checkbox required    ">
+
+        <label class="field-label" for="907272_191115pi_907272_191115">個人情報の取扱い</label>
+
+
+        <span class="input-wrapper"><span class="value"><span><input type="checkbox"
+                                                                     name="907272_191115pi_907272_191115_1180716"
+                                                                     id="907272_191115pi_907272_191115_1180716"
+                                                                     value="1180716" onchange=""/><label class="inline"
+                                                                                                         for="907272_191115pi_907272_191115_1180716">個人情報の取扱いに同意する</label></span></span></span>
+
+        <span class="hpdf-description"><a href="https://www.shinwart.co.jp/privacypolicy.html" target="_blank">個人情報の取り扱いについてはこちら</a>をご覧ください</span>
+
+      </p>
+      <div id="error_for_907272_191115pi_907272_191115" style="display:none"></div>
+
+
+    </div>
+
+
+    <p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+      <label for="pi_extra_field">Comments</label>
+      <input type="text" name="pi_extra_field" id="pi_extra_field"/>
+    </p>
+
+
+    <!-- forces IE5-8 to correctly submit UTF8 content  -->
+    <input name="_utf8" type="hidden" value="&#9731;"/>
+
+    <p class="submit">
+      <input type="submit" accesskey="s" value="送信"/>
+    </p>
+
+
+    <script type="text/javascript">
+      //<![CDATA[
+
+      var anchors = document.getElementsByTagName("a");
+      for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        if (anchor.getAttribute("href") && !anchor.getAttribute("target")) {
+          anchor.target = "_top";
+        }
+      }
+
+      //]]>
+    </script>
+    <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""/></form>
+  <script type="text/javascript">(function () {
+    pardot.$(document).ready(function () {
+      (function () {
+        var $ = window.pardot.$;
+        window.pardot.FormDependencyMap = [];
+
+        $('.form-field-primary input, .form-field-primary select').each(function (index, input) {
+          $(input).on('change', window.piAjax.checkForDependentField);
+          window.piAjax.checkForDependentField.call(input);
+        });
+      })();
+    });
+  })();</script>
+</div>
+<script type="text/javascript" src="https://www.b-story.co.jp/stande/core/stande-1.0.7.js"></script>
+<script type="text/javascript"
+        src="https://www2.shinwart.co.jp/l/907272/2021-03-30/kx2b/907272/1617084051lBdWmsot/stande_setting.js"></script>
+</body>
+</html>
+
