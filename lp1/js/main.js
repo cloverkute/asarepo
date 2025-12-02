@@ -295,16 +295,21 @@ window.addEventListener('message', function (event) {
 
   if (!data || data.type !== 'shinwartFormHeight') return;
 
-  const iframes = document.querySelectorAll('.shinwart-form');
   const maxHeight = 600;
   const isMobile = window.matchMedia('(max-width: 1120px)').matches;
 
-  iframes.forEach(el => {
-    if (isMobile) {
-      el.style.height = maxHeight + 'px';
-    } else {
-      const newHeight = data.height;
-      el.style.height = newHeight + 'px';
+  const iframes = document.querySelectorAll('.shinwart-form');
+  let senderIframe = null;
+
+  iframes.forEach(iframe => {
+    if (iframe.contentWindow === event.source) {
+      senderIframe = iframe;
     }
   });
+
+  if (!senderIframe) return;
+
+  senderIframe.style.height = isMobile
+    ? maxHeight + 'px'
+    : data.height + 'px';
 });
