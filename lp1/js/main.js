@@ -296,6 +296,7 @@ window.addEventListener('message', function (event) {
   if (!data || data.type !== 'shinwartFormHeight') return;
 
   const maxHeight = 600;
+  const minHeight = 400;
   const isMobile = window.matchMedia('(max-width: 1120px)').matches;
 
   const iframes = document.querySelectorAll('.shinwart-form');
@@ -309,7 +310,11 @@ window.addEventListener('message', function (event) {
 
   if (!senderIframe) return;
 
-  senderIframe.style.height = isMobile
-    ? maxHeight + 'px'
-    : data.height + 'px';
+  if (data.state === 'complete') {
+    senderIframe.style.height = minHeight + 'px';
+  } else {
+    senderIframe.style.height = isMobile
+      ? maxHeight + 'px'
+      : data.height + 'px';
+  }
 });

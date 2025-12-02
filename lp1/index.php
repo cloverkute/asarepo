@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>あさレポ～コンプライアンスを推進するアルコールチェックサービス～</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="企業のコンプライアンスが問われる時代にふさわしい運転前アルコールチェック&検温クラウドサービス">
+  <meta property="og:image" content="https://will0905.xsrv.jp/asarepo/lp1/img/OGP.png">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://saas.shinwart.co.jp/asarepo/favicon.ico">
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+<!-- Cookie Manager -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  var ppCookieStrageOfPerformance_start = localStorage.getItem('ppCookiePerformance');
+  var ppCookieStrageOfTargeting_start = localStorage.getItem('ppCookieTargeting');
+  if (ppCookieStrageOfTargeting_start == 'false' && (ppCookieStrageOfPerformance_start !== 'false' || !ppCookieStrageOfPerformance_start)) {
+    gtag('consent', 'default', {
+      'ad_storage': 'denied'
+    });
+  } else if (ppCookieStrageOfPerformance_start == 'false' && (ppCookieStrageOfTargeting_start !== 'false' || !ppCookieStrageOfTargeting_start)) {
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+  } else if ((ppCookieStrageOfTargeting_start == 'false') && (ppCookieStrageOfPerformance_start == 'false')) {
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    }); 
+          console.log(ppCookieStrageOfTargeting_start);
+          console.log(ppCookieStrageOfPerformance_start);
+  }
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZBX9F6');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrapper header-inner">
+    <a href="https://saas.shinwart.co.jp/asarepo/" target="_blank" class="logo">
+      <img src="img/LOGO_Asarepo.svg" alt="あさレポ">
+    </a>
+
+    <nav class="pc-nav">
+      <a href="#section-issues">課題</a>
+      <a href="#section-feature">特長</a>
+      <a href="#section-function">機能</a>
+      <a href="#section-usage">利用イメージ</a>
+      <a href="#section-support">サポート</a>
+      <a href="#section-results">導入実績</a>
+      <a href="#section-flow">導入の流れ</a>
+      <a href="#section-faq">よくある質問</a>
+    </nav>
+
+    <!-- SPメニュー -->
+    <div class="sp-menu" id="spMenu">
+      <!--  <button class="sp-menu-close" id="spMenuClose" aria-label="メニューを閉じる">×</button>-->
+      <a href="#section-issues" class="sp-menu-link">課題</a>
+      <a href="#section-feature" class="sp-menu-link">特長</a>
+      <a href="#section-function" class="sp-menu-link">機能</a>
+      <a href="#section-usage" class="sp-menu-link">利用イメージ</a>
+      <a href="#section-support" class="sp-menu-link">サポート</a>
+      <a href="#section-results" class="sp-menu-link">導入実績</a>
+      <a href="#section-flow" class="sp-menu-link">導入の流れ</a>
+      <a href="#section-faq" class="sp-menu-link">よくある質問</a>
+      <button class="sp-menu-cta js-scroll-contact">
+        お問い合わせ・資料DL・<br>無料トライアル
+      </button>
+    </div>
+
+    <!-- 四角ボタン + 右アイコン -->
+    <button class="header-cta js-scroll-contact">
+      <span class="header-cta-text">お問い合わせ・資料DL<br>無料トライアル</span>
+      <span class="header-cta-icon" aria-hidden="true"></span>
+    </button>
+
+    <!-- SP 用ハンバーガー -->
+    <div id="hamburger" class="header-toggle-menu">
+      <div class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrapper hero-inner">
+    <div class="hero-main">
+      <p class="hero-label">コンプライアンスを推進する<br>アルコールチェックサービス</p>
+      <h1 class="hero-title">
+        <img src="img/h1.png" alt="あさレポ">
+      </h1>
+      <p class="hero-subtitle">
+        企業のコンプライアンスが<br class="sp_txt-block">問われる時代にふさわしい<br>
+        運転前アルコールチェック&<br class="sp_txt-block">検温<sup>※1</sup>クラウドサービス
+      </p>
+
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <p class="hero-badge-txt">導入企業数</p>
+          <p class="hero-badge-number">1,300<span class="hero-badge-unit">社</span><span class="hero-badge-unit sp_txt-block">以上</span></p>
+          <p class="hero-badge-bottom-txt pc_txt-block">以上</p>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge">
+            <p class="hero-badge-txt">累計利用者数</p>
+            <p class="hero-badge-number">15<span class="hero-badge-unit-1">万</span><span class="hero-badge-unit">社</span><span class="hero-badge-unit sp_txt-block">以上</span></p>
+            <p class="hero-badge-bottom-txt pc_txt-block">以上</p>
+          </div>
+        </div>
+        <div class="hero-badge-img"><img src="img/jisa-award.png" alt=""></div>
+      </div>
+      <p class="hero-note">
+        ※2025年11月現在
+      </p>
+    </div>
+
+    <!-- PCのみ：フォーム -->
+    <div class="hero-form hero-form-pc">
+      <div class="hero-form-heading">
+        <p class="hero-form-title">お問い合わせ・資料DL・無料トライアル</p>
+        <p class="hero-form-note">下記のフォームへ必須事項をご記入ください。<br>
+          ご記入いただいたメールアドレスに資料ダウンロードURLを自動送付いたします。</p>
+      </div>
+      <iframe class="shinwart-form" src="form-css.html"
+              width="100%" height="auto" type="text/html" frameborder="0"
+              allowTransparency="true" style="border: 0"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- あさレポについて / コンプライアンス -->
+<section id="section-about" class="section-about">
+  <div class="wrapper about-inner">
+    <div class="about-card left">
+      <img src="img/about01.png" alt="あさレポのポイント1" class="about-img">
+    </div>
+    <div class="about-text-block">
+      <p class="about-title">
+        「あさレポ」はアルコールチェックを通して<br class="pc_txt-block">
+        <span class="highlight-txt">企業のコンプライアンス推進</span>を支援します
+      </p>
+      <p class="about-text">
+        2023年の白ナンバー事業者に対するアルコール検知器の使用義務化規定を受けて、<br class="pc_txt-block">
+        多くの企業でアルコールチェックサービスが導入されています。
+      </p>
+      <p class="about-text">
+        しかし、導入後も安全運転管理者やドライバーの負担増加、<br class="pc_txt-block">
+        法令に準拠した点呼の安定実施といった課題が残り、<br class="pc_txt-block">
+        対応に苦慮する企業は少なくありません。
+      </p>
+      <p class="about-text">
+        「あさレポ」は、このような課題を抱える企業の、<br class="pc_txt-block">
+        「法令に準拠したアルコールチェックの定着化」を支援し、
+      </p>
+      <p class="about-text-bottom"><span class="highlight-txt">交通事故ゼロの社会</span>を目指します。</p>
+    </div>
+    <div class="about-card right">
+      <img src="img/about02.png" alt="あさレポのポイント2" class="about-img">
+    </div>
+  </div>
+</section>
+
+<!-- 課題 -->
+<section id="section-issues" class="section-issues">
+  <div class="wrapper">
+    <p class="section-heading">
+      <span>よくある課題</span>
+    </p>
+
+    <div class="bubbles-container">
+      <div class="bubble-item bg-1">
+        <div class="bubble-content">
+          <h3 class="bubble-title">
+            <span class="text-label">課題</span>
+            <span class="number">1</span>
+          </h3>
+          <p>アルコールチェックサービスを<br>導入しているが、法令に準拠した<br>アルコールチェックの<br>定着化ができていない。</p>
+        </div>
+      </div>
+
+      <div class="bubble-item bg-2">
+        <div class="bubble-content">
+          <h3 class="bubble-title">
+            <span class="text-label">課題</span>
+            <span class="number">2</span>
+          </h3>
+          <p>紙やエクセルで管理しており、<br>ドライバーや安全運転管理者の作業<br>が煩雑で工数が多くかかっている。</p>
+        </div>
+      </div>
+
+      <div class="bubble-item bg-3">
+        <div class="bubble-content">
+          <h3 class="bubble-title">
+            <span class="text-label">課題</span>
+            <span class="number">3</span>
+          </h3>
+          <p>走行記録の作成・管理を含む運転日報の作成や車両点検記録を一元管理して業務の効率化を図りたい。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="people-container">
+      <img src="img/issues.png" alt="People illustrating problems">
+    </div>
+  </div>
+</section>
+
+<!-- 特長 -->
+<section id="section-feature">
+  <div class="section-yellow">
+    <div class="wrapper">
+      <h2 class="section-title">
+        <span class="sub-title">FEATURE</span>
+        <span class="main-title">「あさレポ」<br class="sp_txt-block">の特長</span>
+      </h2>
+      <p class="feature-intro">
+        「あさレポ」は、アルコールチェックや点呼管理などの安定した運用を支援します。<br>
+        おかげさまでコンプライアンスを重要視する企業に選ばれています。
+      </p>
+
+      <div class="feature-cards">
+        <div class="feature-card">
+          <h3 class="bubble-title">
+            <span class="text-label">特長</span>
+            <span class="number">1</span>
+          </h3>
+          <div class="feature-image">
+            <img src="img/feature01.png" alt="改ざん防止と厳格な履歴管理">
+          </div>
+          <p class="feature-description">
+            アルコールチェックの実施状況を一元管理し、法令に準拠した運用を実現
+          </p>
+          <button class="feature-button js-open-feature-modal" data-feature="1">
+            詳しく見る
+            <span class="plus-icon"></span>
+          </button>
+        </div>
+
+        <div class="feature-card">
+
+          <h3 class="bubble-title">
+            <span class="text-label">特長</span>
+            <span class="number">2</span>
+          </h3>
+          <div class="feature-image">
+            <img src="img/feature02.png" alt="クラウドで拠点を一元管理">
+          </div>
+          <p class="feature-description">
+            最短30秒でアルコールチェックが完了でき、どこからでも管理が可能
+          </p>
+          <button class="feature-button js-open-feature-modal" data-feature="2">
+            詳しく見る
+            <span class="plus-icon"></span>
+          </button>
+        </div>
+
+        <div class="feature-card">
+
+          <h3 class="bubble-title">
+            <span class="text-label">特長</span>
+            <span class="number">3</span>
+          </h3>
+          <div class="feature-image">
+            <img src="img/feature03.png" alt="ドライバーもかんたん操作">
+          </div>
+          <p class="feature-description">
+            アルコールチェック記録と走行記録から運転日報を自動作成<sup>※2</sup>し、業務の効率化を支援
+          </p>
+          <button class="feature-button js-open-feature-modal" data-feature="3">
+            詳しく見る
+            <span class="plus-icon"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE モーダル -->
+<div class="modal-backdrop" id="featureModal-1">
+  <div class="modal">
+    <button class="modal-close" id="featureModalClose" aria-label="閉じる">×</button>
+    <h3 class="modal-title" id="featureModalTitle">
+      アルコールチェックの実施状況を一元管理し、法令に準拠した運用を実現
+    </h3>
+    <div class="modal-divider"></div>
+    <p class="modal-text">
+      アルコールチェックの実施はもちろん、運用の定着化は安全運転管理者にとって重要な課題です。
+    </p>
+
+    <div class="modal-two-cols">
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/3.svg" alt="" class="modal-img no-border">
+        </div>
+        <p class="modal-caption">
+          レポートサービス（オプション）と組み合わせることでアルコールチェックの実施状況を可視化できます。実施率を部門単位で確認するなど、データに基づいた指導が可能です。
+        </p>
+      </div>
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/2.svg" alt="" class="modal-img no-border">
+        </div>
+        <p class="modal-caption">
+          法令に準拠した運用には、「改ざん」の防止も重要です。「あさレポ」は、AI顔認証によるなりすまし防止と登録後のデータは変更できないなど、なりすまし防止と改ざん防止機能を兼ね備えています。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop" id="featureModal-2">
+  <div class="modal">
+    <button class="modal-close" id="featureModalClose" aria-label="閉じる">×</button>
+    <h3 class="modal-title" id="featureModalTitle">
+      最短30秒でアルコールチェックが完了でき、どこからでも管理が可能
+    </h3>
+    <div class="modal-divider"></div>
+    <p class="modal-text">
+      アプリの画面に表示される指示に従うだけで簡単便利にアルコールチェックが完了します。<br>
+      測定データは測定時の顔写真とともにクラウドサーバへ自動送信されます。<br>
+      管理者はどこからでも記録の確認が可能です。
+    </p>
+
+    <div class="modal-two-cols">
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/1.jpg" alt="" class="modal-img">
+        </div>
+        <p class="modal-caption">
+          画面の指示に従ってアルコールチェックを行います。<br>
+          操作の説明動画を提供して導入時の教育を支援します。
+        </p>
+      </div>
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/7.png" alt="" class="modal-img">
+        </div>
+        <p class="modal-caption">
+          測定データはクラウドサーバで一括管理します。<br>
+          本社から各拠点の測定状況を確認できます。拠点や部門単位で閲覧制限を設定することもできます。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop" id="featureModal-3">
+  <div class="modal">
+    <button class="modal-close" id="featureModalClose" aria-label="閉じる">×</button>
+    <h3 class="modal-title" id="featureModalTitle">
+      アルコールチェック記録と走行記録から運転日報を自動作成<sup>※2</sup>し、業務の効率化を支援
+    </h3>
+    <div class="modal-divider"></div>
+    <p class="modal-text">
+      スマホのGPS機能を利用して走行記録をワンクリックで登録することができます。<br>
+      アルコールチェック記録と走行記録から運転日報が自動で作成されるため、安全運転管理者はアルコールチェック漏れ、異常値の有無、走行記録の登録状況を確認できます。
+    </p>
+
+    <div class="modal-three-cols">
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/8.png" alt="" class="modal-img">
+        </div>
+        <p class="modal-caption">
+          スマホのGPS機能を利用して走行記録をワンクリックで登録することができます。
+        </p>
+      </div>
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/9.jpg" alt="" class="modal-img">
+        </div>
+        <p class="modal-caption">
+          ODOメーターの数値を入力する従来の方法でも走行記録の登録が可能です。
+        </p>
+      </div>
+      <div>
+        <div class="modal-image-box">
+          <img src="img/modal/10.jpg" alt="" class="modal-img">
+        </div>
+        <p class="modal-caption">
+          専用アプリから車両点検の記録も登録することができます。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 機能 -->
+<section id="section-function" class="section-function">
+  <div class="wrapper">
+    <h2 class="section-title">
+      <span class="sub-title">FUNCTION</span>
+      <span class="main-title">「あさレポ」の機能</span>
+    </h2>
+
+    <div class="function-inner">
+      <div class="func-img bg_pc_block">
+        <img src="img/bg02.png" alt="">
+      </div>
+      <div class="function-nav">
+        <button class="function-nav-btn is-active" data-target="func1"><span class="number">1</span><p>検温<sup>※1</sup>&アルコール測定</p></button>
+        <button class="function-nav-btn" data-target="func2"><span class="number">2</span>クラウド管理</button>
+        <button class="function-nav-btn" data-target="func3"><span class="number">3</span><p>運転日報・車両点検<sup>※2</sup></p></button>
+        <button class="function-nav-btn" data-target="func4"><span class="number">4</span>J-BAC認定のアルコール検知器</button>
+        <button class="function-nav-btn" data-target="func5"><span class="number">5</span>専用・共用アプリ</button>
+        <button class="function-nav-btn" data-target="func6"><span class="number">6</span>外部サービス連携</button>
+      </div>
+
+      <div class="function-content pc_block">
+        <div class="function-panel is-active" id="func1">
+          <div class="function-images _01">
+            <div>
+              <img src="img/function/function_1_1.jpg" alt="" class="function-img">
+            </div>
+            <div>
+              <img src="img/function/function_1_2.jpg" alt="" class="function-img">
+            </div>
+          </div>
+          <p class="function-panel-text">
+            専用アプリの画面に従ってアルコールチェックを実施します。<br>
+            最短30秒でチェックが完了します。<br>
+            測定時に撮影した画像と測定データはクラウドサーバに自動送信されるため、面倒な操作は不要です。<br>
+            過去の測定記録や検温<sup>※1</sup>機能の記録を用いた体調管理にも活用できます。
+          </p>
+        </div>
+
+        <div class="function-panel" id="func2">
+          <div class="function-images">
+            <div>
+              <img src="img/function/function_2_1.png" alt="" class="function-img">
+            </div>
+            <div>
+              <img src="img/function/function_2_2.png" alt="" class="function-img">
+            </div>
+          </div>
+          <p class="function-panel-text">
+            すべての管理機能を利用できる「組織管理者」、配下ユーザーの測定記録の確認を行える<br>
+            「部門管理者」、測定のみを行える「一般ユーザー」の単位で権限を設定できます。<br>
+            異常値検知時や測定漏れの通知を部門単位で絞り込むこともできます。<br>
+            管理者自身もアルコールチェックを行うことはできますが、管理画面の利用のみの管理者であれば無料で何名でも作成できます。
+          </p>
+        </div>
+
+        <div class="function-panel" id="func3">
+          <div class="function-images _01">
+            <div>
+              <img src="img/function/function_3_1.png" alt="" class="function-img">
+            </div>
+          </div>
+          <p class="function-panel-text">
+            アルコールチェック記録や走行履歴、車両点検記録、体調記録など点呼業務に必要な記録を運転日報機能で一元管理できます。<br>
+            管理画面から日報、月報形式で閲覧することができます。
+          </p>
+        </div>
+
+        <div class="function-panel" id="func4">
+          <div class="function-images">
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img1.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">XENSE-83BTW</p>
+            </div>
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img2.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">スマートアルコールチェッカー<br>XENSE Pro 92BT</p>
+            </div>
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img3.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">SOCIAC NEO（SC-502）</p>
+            </div>
+          </div>
+          <div class="function-images">
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img4.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">NEO BLUE（NEB-601）</p>
+            </div>
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img5.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">HCS-AC01BTBK<br>HCS-AC01BTWH</p>
+            </div>
+            <div>
+              <div class="func-img-wrap">
+                <img src="img/function/top-device-img6.webp" alt="" class="function-img">
+              </div>
+              <p class="function-image-desc">アルコール検知器<br>フーゴスマートBt（FALC-31）</p>
+            </div>
+          </div>
+          <p class="function-panel-text">
+            半導体式や電気化学式のアルコール検知器と連携が可能です。<br>
+            専用アプリをインストールしたスマホとアルコール検知器をBluetoothで接続するだけで、いつでもどこでも測定することができます。
+          </p>
+        </div>
+
+        <div class="function-panel" id="func5">
+          <div class="function-images">
+            <div>
+              <img src="img/function/apps-img1.webp" alt="" class="function-img">
+            </div>
+            <div>
+              <img src="img/function/apps-img2.webp" alt="" class="function-img">
+            </div>
+          </div>
+          <p class="function-panel-text">
+            iOSとAndroid対応のスマホ向けアプリと、複数ドライバーでの共用に適したiPadOS対応のアプリを提供しています。<br>
+            社用スマホが貸与されていないドライバーやスマホを忘れたドライバーは、共用型のiPadアプリを利用することで普段通りの測定ができます。
+          </p>
+        </div>
+
+        <div class="function-panel" id="func6">
+          <div class="function-images">
+            <div class="no-border-radius">
+              <img src="img/function/service-img1.webp" alt="" class="function-img">
+            </div>
+            <div class="no-border-radius">
+              <img src="img/function/service-img2.webp" alt="" class="function-img">
+            </div>
+            <div class="no-border-radius">
+              <img src="img/function/service-img3.webp" alt="" class="function-img">
+            </div>
+          </div>
+          <p class="function-panel-text">
+            テレマティクスサービスと連携することで、走行記録の自動登録を実現し、登録漏れを防止します。<br>
+            デジタルキーサービスと連携することで、アルコールチェックをクリアし、管理者の乗車許可が得られた場合にのみエンジンを始動できる「アルコール・インターロック」機能を利用できます。
+          </p>
+        </div>
+      </div>
+
+      <div class="function-nav-sp">
+        <div class="function-content-sp">
+          <button class="function-nav-btn-sp is-active" data-target="func-sp-1"><span class="number">1</span><p>検温<sup>※1</sup>&アルコール測定</p></button>
+          <div class="function-panel-sp is-active" id="func-sp-1">
+            <div class="function-images _01">
+              <div>
+                <img src="img/function/function_1_1.jpg" alt="" class="function-img">
+              </div>
+              <div>
+                <img src="img/function/function_1_2.jpg" alt="" class="function-img">
+              </div>
+            </div>
+            <p class="function-panel-text">
+              専用アプリの画面に従ってアルコールチェックを実施します。<br>
+              最短30秒でチェックが完了します。<br>
+              測定時に撮影した画像と測定データはクラウドサーバに自動送信されるため、面倒な操作は不要です。<br>
+              過去の測定記録や検温<sup>※1</sup>機能の記録を用いた体調管理にも活用できます。
+            </p>
+          </div>
+        </div>
+        <div class="function-content-sp">
+          <button class="function-nav-btn-sp" data-target="func-sp-2"><span class="number">2</span>クラウド管理</button>
+          <div class="function-panel-sp" id="func-sp-2">
+            <div class="function-images">
+              <div>
+                <img src="img/function/function_2_1.png" alt="" class="function-img">
+              </div>
+              <div>
+                <img src="img/function/function_2_2.png" alt="" class="function-img">
+              </div>
+            </div>
+            <p class="function-panel-text">
+              すべての管理機能を利用できる「組織管理者」、配下ユーザーの測定記録の確認を行える<br>
+              「部門管理者」、測定のみを行える「一般ユーザー」の単位で権限を設定できます。<br>
+              異常値検知時や測定漏れの通知を部門単位で絞り込むこともできます。<br>
+              管理者自身もアルコールチェックを行うことはできますが、管理画面の利用のみの管理者であれば無料で何名でも作成できます。
+            </p>
+          </div>
+        </div>
+        <div class="function-content-sp">
+          <button class="function-nav-btn-sp" data-target="func-sp-3"><span class="number">3</span><p>運転日報・車両点検<sup>※2</sup></p></button>
+          <div class="function-panel-sp" id="func-sp-3">
+            <div class="function-images _01">
+              <div>
+                <img src="img/function/function_3_1.png" alt="" class="function-img">
+              </div>
+            </div>
+            <p class="function-panel-text">
+              アルコールチェック記録や走行履歴、車両点検記録、体調記録など点呼業務に必要な記録を運転日報機能で一元管理できます。<br>
+              管理画面から日報、月報形式で閲覧することができます。
+            </p>
+          </div>
+        </div>
+        <div class="function-content-sp">
+          <button id="func-sp-4-btn" class="function-nav-btn-sp" data-target="func-sp-4"><span class="number">4</span>J-BAC認定のアルコール検知器</button>
+          <div class="function-panel-sp" id="func-sp-4">
+            <div class="function-images">
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img1.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">XENSE-83BTW</p>
+              </div>
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img2.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">スマートアルコールチェッカー<br>XENSE Pro 92BT</p>
+              </div>
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img3.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">SOCIAC NEO（SC-502）</p>
+              </div>
+            </div>
+            <div class="function-images">
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img4.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">NEO BLUE（NEB-601）</p>
+              </div>
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img5.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">HCS-AC01BTBK<br>HCS-AC01BTWH</p>
+              </div>
+              <div>
+                <div class="func-img-wrap">
+                  <img src="img/function/top-device-img6.webp" alt="" class="function-img">
+                </div>
+                <p class="function-image-desc">アルコール検知器<br>フーゴスマートBt（FALC-31）</p>
+              </div>
+            </div>
+            <p class="function-panel-text">
+              半導体式や電気化学式のアルコール検知器と連携が可能です。<br>
+              専用アプリをインストールしたスマホとアルコール検知器をBluetoothで接続するだけで、いつでもどこでも測定することができます。
+            </p>
+          </div>
+        </div>
+        <div class="function-content-sp">
+          <button class="function-nav-btn-sp" data-target="func-sp-5"><span class="number">5</span>専用・共用アプリ</button>
+          <div class="function-panel-sp" id="func-sp-5">
+            <div class="function-images">
+              <div>
+                <img src="img/function/apps-img1.webp" alt="" class="function-img">
+              </div>
+              <div>
+                <img src="img/function/apps-img2.webp" alt="" class="function-img">
+              </div>
+            </div>
+            <p class="function-panel-text">
+              iOSとAndroid対応のスマホ向けアプリと、複数ドライバーでの共用に適したiPadOS対応のアプリを提供しています。<br>
+              社用スマホが貸与されていないドライバーやスマホを忘れたドライバーは、共用型のiPadアプリを利用することで普段通りの測定ができます。
+            </p>
+          </div>
+        </div>
+        <div class="function-content-sp">
+          <button class="function-nav-btn-sp" data-target="func-sp-6"><span class="number">6</span>外部サービス連携</button>
+          <div class="function-panel-sp" id="func-sp-6">
+            <div class="function-images">
+              <div class="no-border-radius">
+                <img src="img/function/service-img1.webp" alt="" class="function-img">
+              </div>
+              <div class="no-border-radius">
+                <img src="img/function/service-img2.webp" alt="" class="function-img">
+              </div>
+              <div class="no-border-radius">
+                <img src="img/function/service-img3.webp" alt="" class="function-img">
+              </div>
+            </div>
+            <p class="function-panel-text">
+              テレマティクスサービスと連携することで、走行記録の自動登録を実現し、登録漏れを防止します。<br>
+              デジタルキーサービスと連携することで、アルコールチェックをクリアし、管理者の乗車許可が得られた場合にのみエンジンを始動できる「アルコール・インターロック」機能を利用できます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 「もっと詳しく知りたい方〜」ブロック -->
+<section class="section-download-cta">
+  <div class="wrapper download-cta-inner">
+    <div class="download-cta-text">
+      <h2 class="section-title">
+        「あさレポ」の機能を<br class="sp_txt-block">もっと詳しく知りたい方、<br>
+        利用料金を知りたい方は<br class="sp_txt-block">資料をダウンロード！
+      </h2>
+      <p class="section-subtitle">
+        初期費用無料！<br class="sp_txt-block">定額プラン、従量課金プランから<br class="sp_txt-block">選べます！
+      </p>
+      <button class="download-cta-button js-scroll-contact">
+        お問い合わせ・資料DL・<br class="sp_txt-block">無料トライアル
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 利用イメージ -->
+<section id="section-usage" class="section-usage">
+  <div class="wrapper">
+    <h2 class="section-title">
+      <span class="sub-title">HOW TO USE</span>
+      <span class="main-title">利用イメージ</span>
+    </h2>
+    <p class="section-subtitle">
+      「あさレポ」は、シンプルな操作で<br>
+      ドライバーのアルコールチェックの負荷や安全運転管理者の業務負荷の軽減を実現します。
+    </p>
+
+    <div class="usage-columns">
+      <div class="usage-column _01">
+        <h3 class="title">ドライバー</h3>
+          <div class="grid-container">
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage01.svg" alt="">
+              </div>
+              <h4>AI顔認証で<br>簡単ログイン</h4>
+              <p>AI顔認証でアプリにログインすることで、なりすましを防止します。</p>
+            </div>
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage02.svg" alt="">
+              </div>
+              <h4>アルコールチェックは<br>最短30秒！</h4>
+              <p>画面の案内に従って操作するだけで、最短30秒で完了します。</p>
+            </div>
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage03.svg" alt="">
+              </div>
+              <h4>測定結果を<br>自動で報告</h4>
+              <p>測定結果や自動撮影された顔写真は、アプリからクラウドサーバに自動送信されます。</p>
+            </div>
+            <div class="card">
+              <div class="option-label">オプション</div>
+              <div class="icon-placeholder">
+                <img src="img/usage04.svg" alt="">
+              </div>
+              <h4>ワンクリックで<br class="pc_txt-block">走行記録登録</h4>
+              <p>スマートフォンのGPS機能を用いて走行距離を自動で登録します。</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="usage-column _02">
+        <h3 class="title">安全運転管理者</h3>
+          <div class="grid-container">
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage05.svg" alt="">
+              </div>
+              <h4>チェック結果を<br class="pc_txt-block">一目で確認</h4>
+              <p>通知機能により速やかな確認ができます、承認完了後はユーザーに自動でメール通知します。</p>
+            </div>
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage06.svg" alt="">
+              </div>
+              <h4>外出先からでも<br class="pc_txt-block">測定結果を確認</h4>
+              <p>社外でも、スマホ用の管理画面から測定結果を速やかに確認できます。</p>
+            </div>
+            <div class="card">
+              <div class="icon-placeholder">
+                <img src="img/usage07.svg" alt="">
+              </div>
+              <h4>利用頻度に応じた<br class="pc_txt-block">2つの料金プラン</h4>
+              <p>利用回数に応じて、ユーザー単位で定額プラン・従量課金プランを任意で変更できます。</p>
+            </div>
+            <div class="card">
+              <div class="option-label">オプション</div>
+              <div class="icon-placeholder">
+                <img src="img/usage08.svg" alt="">
+              </div>
+              <h4>レポート機能で<br class="pc_txt-block">実施状況を確認</h4>
+              <p>適切にアルコールチェックが行われているか、管理部門ごと、ドライバーごとに確認ができます。</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- サポート -->
+<section id="section-support" class="section-support">
+  <div class="wrapper">
+    <div class="support-img-bg-left bg_pc_block">
+      <img src="img/bg01.png" alt="">
+    </div>
+    <div class="support-img-bg bg_pc_block">
+      <img src="img/bg02.png" alt="">
+    </div>
+    <h2 class="section-title">
+      <span class="sub-title">SUPPORT</span>
+      <span class="main-title">サポート</span>
+    </h2>
+
+    <div class="support-grid">
+      <article class="support-card">
+        <img src="img/support01.png" alt="" class="support-img">
+        <h3 class="support-card-title">導入検討</h3>
+        <p class="support-card-text">
+          無料トライアル期間から導入を支援します。<br>
+          ご希望の利用方法をヒアリングし、最適な活用方法を提案します。
+        </p>
+      </article>
+      <article class="support-card">
+        <img src="img/support02.png" alt="" class="support-img">
+        <h3 class="support-card-title">運用サポート</h3>
+        <p class="support-card-text">
+          Webと電話両方でのサポートを提供しています。<br>
+          操作説明動画なども提供しているので、導入時の教育も簡単に行えます。
+        </p>
+      </article>
+      <article class="support-card">
+        <img src="img/support03.png" alt="" class="support-img">
+        <h3 class="support-card-title">定着化支援</h3>
+        <p class="support-card-text">
+          レポートサービス（オプション）を利用し、毎月の利用状況を可視化できます。<br>
+          コンプライアンスの観点から改善点や機能の活用方法を提案します。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 導入実績 -->
+<section id="section-results" class="section-results">
+  <div class="wrapper">
+    <h2 class="section-title">
+      <span class="sub-title">ACHIEVEMENT</span>
+      <span class="main-title">導入実績</span>
+    </h2>
+    <p class="section-subtitle">
+      大手企業から中小企業まで、幅広い業種業態の企業に選ばれています。
+    </p>
+
+    <div class="stats-container-clean">
+      <div class="stat-block-clean">
+        <p class="stat-title-clean">導入企業数</p>
+        <p class="stat-number-clean">
+          1,300<span class="unit-clean">社以上</span>
+        </p>
+        <p class="stat-note-clean">※2025年11月現在</p>
+      </div>
+
+      <div class="stat-block-clean">
+        <p class="stat-title-clean">累計利用者数</p>
+        <p class="stat-number-clean">
+          15<span class="unit">万</span><span class="unit-clean">人以上</span>
+        </p>
+        <p class="stat-note-clean">※2025年11月現在までの累計アカウント発行数</p>
+      </div>
+    </div>
+
+    <div class="logo-row-wrapper">
+      <div class="logo-row">
+        <img src="img/result_1.svg" alt="" class="logo-item">
+        <img src="img/result_2.svg" alt="" class="logo-item">
+        <img src="img/result_3.svg" alt="" class="logo-item">
+        <img src="img/result_4.png" alt="" class="logo-item _04">
+        <img src="img/result_10.svg" alt="" class="logo-item">
+      </div>
+
+      <div class="logo-row">
+        <img src="img/result_5.svg" alt="" class="logo-item">
+        <img src="img/result_6.svg" alt="" class="logo-item">
+        <img src="img/result_7.svg" alt="" class="logo-item">
+        <img src="img/result_8.svg" alt="" class="logo-item">
+        <img src="img/result_9.svg" alt="" class="logo-item">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 導入までの流れ -->
+<section id="section-flow" class="section-flow">
+  <div class="wrapper">
+    <div class="flow-img-bg bg_pc_block">
+      <img src="img/bg02.png" alt="">
+    </div>
+    <h2 class="section-title">
+      <span class="sub-title">FLOW</span>
+      <span class="main-title">導入までの流れ</span>
+    </h2>
+
+    <div class="step-process-container">
+      <div class="step-card">
+        <div class="step-header">STEP <span>1</span></div>
+        <div class="step-content">
+          お問い合わせ・資料ダウンロード・<br class="pc_txt-block">無料トライアル申し込み
+        </div>
+      </div>
+
+      <img src="img/arrow-right.svg" alt="" class="arrow-indicator arrow-pc">
+      <img src="img/arrow-down.svg" alt="" class="arrow-indicator arrow-sp">
+
+      <div class="step-card">
+        <div class="step-header">STEP <span>2</span></div>
+        <div class="step-content">
+          提案・見積り<br>
+          （無料トライアルの実施案内等）
+        </div>
+      </div>
+
+      <img src="img/arrow-right.svg" alt="" class="arrow-indicator arrow-pc">
+      <img src="img/arrow-down.svg" alt="" class="arrow-indicator arrow-sp">
+
+      <div class="step-card">
+        <div class="step-header">STEP <span>3</span></div>
+        <div class="step-content">
+          ご利用開始
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 12px">
+      ※1 本製品は表面温度を測定する目的で作られています。正確な体温を測定するには、市販の体温計をご使用ください。鈴与シンワート指定の検温機能付きアルコール検知器利用時に検温が可能です。<br>
+      ※2 運転日報作成、車両点検記録、体調記録、ルート記録の利用は「あさレポ」＋「運転日報オプション」の契約が必要です。
+    </p>
+  </div>
+</section>
+
+<!-- 「もっと詳しく知りたい方〜」ブロック -->
+<section class="section-download-cta">
+  <div class="wrapper download-cta-inner">
+    <div class="download-cta-text">
+      <h2 class="section-title">
+        「あさレポ」の機能を<br class="sp_txt-block">もっと詳しく知りたい方、<br>
+        利用料金を知りたい方は<br class="sp_txt-block">資料をダウンロード！
+      </h2>
+      <p class="section-subtitle">
+        初期費用無料！<br class="sp_txt-block">定額プラン、従量課金プランから<br class="sp_txt-block">選べます！
+      </p>
+      <button class="download-cta-button js-scroll-contact">
+        お問い合わせ・資料DL・<br class="sp_txt-block">無料トライアル
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="section-faq" class="section-faq">
+  <div class="wrapper">
+    <h2 class="section-title">
+      <span class="sub-title">FAQ</span>
+      <span class="main-title">よくある質問</span>
+    </h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>アルコールチェックについて法令遵守ができていない場合に罰則はありますか？</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>
+            アルコールチェックの義務違反があった場合、安全運転管理者の義務違反と見なされ、公安委員会から是正措置命令や安全運転管理者の解任命令が出されることがあります。これらの命令に従わない場合、50万円以下の罰金が科される可能性があります<sup>※3</sup>。<br>
+            <span style="font-size: 12px">※3　2025年11月現在</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>運転頻度の少ないドライバーは、エクセルで管理しています。「あさレポ」の管理画面にて手入力で記録を追加できますか？</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>管理画面から手入力でアルコールチェック結果を入力することはできません。<br>
+            運転頻度の少ないドライバーについては、使った日数分で課金する従量課金プランをおすすめします。<br>
+            従量課金プランを選択することで、運転頻度の高いドライバーと同様に一元管理できます。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>運転をしない管理者の登録費用や制限はありますか？</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>
+            管理者の登録費用は無料です。人数制限もありません。支社単位や部門単位で管理者を設置する必要がある場合など、柔軟に管理者を作成することができます。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>自社で保有しているアルコール検知機を利用できますか。</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>
+            <a href="javascript:void(0);" id="anchor-link" class="anchor-link">こちら</a>に記載されているアルコール検知機を利用できます。<br>
+            お持ちでない場合は、ご購入いただく必要があります。
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>無料トライアルについて教えてください。</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>
+            無料トライアルの期間は20日間です（アルコール検知器のレンタルを含む）。<br>
+            トライアル期間中は、「あさレポ」のすべての機能をご利用いただけます。<br>
+            トライアル開始時に、アルコールチェックの方法や管理画面からの確認方法など各種操作方法についてオンラインでサポートします。<br>
+            無料トライアルを経て契約した場合は、トライアル期間中にご利用いただいた環境をそのまま本番環境として引き続き利用できます。<br>
+            本ページのフォームより「無料トライアルを希望する」にチェックを入れてお申し込みください。
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleIcon(this)">
+          <span>Q</span>
+          <p>利用料金について教えてください。</p>
+          <div class="toggle-button">
+            <span class="icon-bar icon-horizontal"></span>
+            <span class="icon-bar icon-vertical"></span>
+          </div>
+        </button>
+        <div class="faq-answer">
+          <span>A</span>
+          <p>
+            本ページのフォームより資料をダウンロードのうえ、ご確認ください。<br>
+            ご希望の利用環境や利用方法をヒアリングさせていただき、最適な活用方法やお見積りを提示いたしますので、お気軽にご相談ください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT（フッター上のフォーム） -->
+<section id="contact" class="section-contact">
+  <div class="wrapper contact-wrapper">
+    <div class="section-title-wrap">
+      <h2 class="section-title">
+        お問い合わせ・資料DL・<br>無料トライアル
+      </h2>
+      <p class="section-subtitle">
+        フォームへ必須事項をご記入ください。<br>
+        ご記入いただいたメールアドレスに資料ダウンロードURLを<br>
+        自動送付いたします。
+      </p>
+    </div>
+
+    <div class="contact-form-wrap">
+      <iframe class="shinwart-form" src="form-css.html"
+              width="100%" height="auto" type="text/html" frameborder="0"
+              allowTransparency="true" style="border: 0"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrapper footer-inner">
+    <div>
+      <img src="img/footer-logo.svg" alt="鈴与シンワート株式会社" class="footer-logo-img">
+    </div>
+    <div class="footer-main">
+      <div class="footer-links">
+        <a href="https://www.shinwart.co.jp/privacypolicy.html" target="_blank">プライバシーポリシー</a>
+        <a href="https://www.shinwart.co.jp/cookiepolicy.html" target="_blank">クッキーポリシー</a>
+        <a href="https://www.shinwart.co.jp/securitypolicy.html" target="_blank">情報セキュリティ方針</a>
+        <a href="javascript:void(0)" id="open-cookie-setting">クッキー設定変更</a>
+      
+      </div>
+    </div>
+    <div class="footer-copy">
+      Copyright © SUZUYO SHINWART CORPORATION. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<button id="backToTopBtn" title="Go to top">
+  <img src="img/to_top.png" alt="Back to Top" class="top-icon">
+</button>
+
+<!-- ★ ここを修正：/js/main.js を読む -->
+<script src="js/main.js"></script>
+<?php include './cookie/cookie.php'; ?>
+</body>
+</html>
