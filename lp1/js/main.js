@@ -295,7 +295,7 @@ window.addEventListener('message', function (event) {
 
   if (!data || data.type !== 'shinwartFormHeight') return;
 
-  const maxHeight = 600;
+  const maxHeight = 610;
   const minHeight = 400;
   const isMobile = window.matchMedia('(max-width: 1120px)').matches;
 
