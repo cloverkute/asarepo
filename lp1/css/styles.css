@@ -345,7 +345,7 @@ header {
   z-index: 1;
   display: flex;
   align-items: flex-start;
-  height: 650px;
+  height: 680px;
 }
 
 /* 左側テキスト */
@@ -475,6 +475,7 @@ header {
   height: 100%;
   padding: 30px 20px;
   background-color: #FFFFFF;
+  overflow-x: auto;
 }
 
 .hero-form-heading {

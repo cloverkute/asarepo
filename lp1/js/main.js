@@ -303,7 +303,7 @@ window.addEventListener('message', function (event) {
     if (isMobile) {
       el.style.height = maxHeight + 'px';
     } else {
-      const newHeight = Math.min(data.height, maxHeight);
+      const newHeight = data.height;
       el.style.height = newHeight + 'px';
     }
   });
