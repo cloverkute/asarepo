@@ -30,12 +30,15 @@
       margin: 0;
     }
 
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
+    @media screen and (max-width: 1120px) {
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
 
-    ::-webkit-scrollbar-thumb {
-      background: #ccc;
+      ::-webkit-scrollbar-thumb {
+        background: #5e5d5d;
+        border-radius: 5px;
+      }
     }
 
     #contact_wrap {
@@ -725,11 +728,16 @@
 <script type="text/javascript"
         src="https://www2.shinwart.co.jp/l/907272/2021-03-30/kx2b/907272/1617084051lBdWmsot/stande_setting.js"></script>
 <script>
+  let baseHeight = 0;
   function postFormHeight() {
     try {
-      const height = document.documentElement.scrollHeight;
+      const currentHeight = document.documentElement.scrollHeight;
+      if (baseHeight === 0) {
+        baseHeight = currentHeight;
+      }
+      const heightToSend = baseHeight + 10;
       window.parent.postMessage(
-        {type: 'shinwartFormHeight', height: height},
+        {type: 'shinwartFormHeight', height: heightToSend},
         '*'
       );
     } catch (e) {
