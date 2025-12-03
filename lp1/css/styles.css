@@ -9,7 +9,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 html {
@@ -84,8 +83,10 @@ sup {
 }
 
 /* セクション共通 */
-.section {
-  padding: 80px 0;
+@media screen and (min-width: 1280px) {
+  section {
+    overflow-x: hidden;
+  }
 }
 
 .section-title {
@@ -102,6 +103,7 @@ sup {
   color: #F57F28;
   font-size: 16px;
   margin-bottom: 4px;
+  font-family: "Helvetica", Arial, serif;
 }
 
 .main-title {
