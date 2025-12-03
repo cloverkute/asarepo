@@ -543,7 +543,7 @@
 		</div>
 		<script type="text/javascript" src="https://www.b-story.co.jp/stande/core/stande-1.0.7.js"></script>
         <script type="text/javascript" src="https://www2.shinwart.co.jp/l/907272/2021-03-30/kx2b/907272/1617084051lBdWmsot/stande_setting.js"></script>
-	</body>
+	
     <script>
       let baseHeight = 0;
       function postFormHeight() {
@@ -573,5 +573,6 @@
         subtree: true
       });
     </script>
+</body>
 </html>
 
