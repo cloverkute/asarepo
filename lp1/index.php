@@ -806,11 +806,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 
 <!-- サポート -->
+<div class="section-support-wrapper">
+<div class="support-img-bg-left bg_pc_block">
+  <img src="img/bg01.png" alt="">
+</div>
 <section id="section-support" class="section-support">
   <div class="wrapper">
-    <div class="support-img-bg-left bg_pc_block">
-      <img src="img/bg01.png" alt="">
-    </div>
     <div class="support-img-bg bg_pc_block">
       <img src="img/bg02.png" alt="">
     </div>
@@ -847,6 +848,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </section>
+</div>
 
 <!-- 導入実績 -->
 <section id="section-results" class="section-results">

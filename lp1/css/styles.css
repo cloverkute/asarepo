@@ -1189,6 +1189,9 @@ header {
 }
 
 /* ============ サポート ============ */
+.section-support-wrapper {
+  position: relative;
+}
 
 .section-support {
   padding: 88px 0 100px;
@@ -1199,11 +1202,11 @@ header {
   position: relative;
 }
 
-.section-support .wrapper .support-img-bg-left {
+.section-support-wrapper .support-img-bg-left {
   z-index: 0;
   position: absolute;
-  bottom: -230px;
-  left: -140px;
+  bottom: -120px;
+  left: -80px;
 }
 
 .section-support .wrapper .support-img-bg {
