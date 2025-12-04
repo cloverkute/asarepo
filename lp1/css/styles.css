@@ -1664,11 +1664,6 @@ header {
   display: none;
 }
 @media (max-width: 1280px) {
-  section {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-  }
-
   section .wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -1680,6 +1675,11 @@ header {
 }
 
 @media (max-width: 1120px) {
+  section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
   .pc-nav {
     display: none;
   }
