@@ -350,14 +350,6 @@ header {
   height: 680px;
 }
 
-/* 左側テキスト */
-/*.hero-main-container {*/
-/*  width: 60%;*/
-/*  background-image: url("../img/mainvisual_pc.png");*/
-/*  background-size: cover;*/
-/*  background-position: top right;*/
-/*}*/
-
 .hero-main {
   flex: 1;
   background-image: url("../img/mainvisual_pc.png");
@@ -463,14 +455,6 @@ header {
   right: 16px;
   width: 140px;
 }
-
-/* 右側フォーム（PCのみ） */
-/*.hero-form-container {*/
-/*  flex: 1;*/
-/*  height: 100%;*/
-/*  position: relative;*/
-/*  z-index: 1;*/
-/*}*/
 
 .hero-form {
   width: 460px;
@@ -1671,8 +1655,14 @@ header {
   .sp-menu {
     display: none !important;
   }
-}
 
+  .br-pc {
+    display: inline !important;
+  }
+}
+.br-pc {
+  display: none;
+}
 @media (max-width: 1280px) {
   section {
     padding-top: 50px !important;

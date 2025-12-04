@@ -206,7 +206,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span class="text-label">課題</span>
             <span class="number">2</span>
           </h3>
-          <p>紙やエクセルで管理しており、<br>ドライバーや安全運転管理者の作業<br>が煩雑で工数が多くかかっている。</p>
+          <p>紙やエクセルで管理しており、<br>ドライバーや安全運転管理者の作業<br class="br-pc">が煩雑で工数が多くかかっている。</p>
         </div>
       </div>
 
@@ -1093,8 +1093,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </h2>
       <p class="section-subtitle">
         フォームへ必須事項をご記入ください。<br>
-        ご記入いただいたメールアドレスに資料ダウンロードURLを<br>
-        自動送付いたします。
+        ご記入いただいたメールアドレスに資料ダウンロードURLを<br class="br-pc">自動送付いたします。
       </p>
     </div>
 
