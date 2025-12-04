@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p class="hero-form-note">下記のフォームへ必須事項をご記入ください。<br>
           ご記入いただいたメールアドレスに資料ダウンロードURLを自動送付いたします。</p>
       </div>
-      <iframe class="shinwart-form" src="form-css.html"
+      <iframe class="shinwart-form" src="https://www2.shinwart.co.jp/l/907272/2025-10-20/hy7fx"
               width="100%" height="auto" type="text/html" frameborder="0"
               allowTransparency="true" style="border: 0"></iframe>
     </div>
@@ -1098,7 +1098,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
     <div class="contact-form-wrap">
-      <iframe class="shinwart-form" src="form-css.html"
+      <iframe class="shinwart-form" src="https://www2.shinwart.co.jp/l/907272/2025-10-20/hy7fx"
               width="100%" height="auto" type="text/html" frameborder="0"
               allowTransparency="true" style="border: 0"></iframe>
     </div>
