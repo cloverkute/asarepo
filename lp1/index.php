@@ -107,9 +107,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section class="hero">
   <div class="wrapper hero-inner">
     <div class="hero-main">
-      <p class="hero-label">コンプライアンスを推進する<br>アルコールチェックサービス</p>
-      <h1 class="hero-title">
-        <img src="img/h1.png" alt="あさレポ">
+      <h1 class="hero-h1">
+        <p class="hero-label">コンプライアンスを推進する<br>アルコールチェックサービス</p>
+        <img class="hero-title" src="img/h1.png" alt="「あさレポ」">
       </h1>
       <p class="hero-subtitle">
         企業のコンプライアンスが<br class="sp_txt-block">問われる時代にふさわしい<br>

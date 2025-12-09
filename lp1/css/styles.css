@@ -354,12 +354,15 @@ header {
   flex: 1;
   background-image: url("../img/mainvisual_pc.png");
   background-size: cover;
-  background-position: top right;
+  /*background-position: top right;*/
   padding: 70px 50px 20px;
   height: 100%;
   color: #ffffff;
 }
 
+.hero-h1 {
+  margin: 0;
+}
 .hero-label {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 800;
