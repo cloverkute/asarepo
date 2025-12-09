@@ -5,7 +5,7 @@
   <title>あさレポ～コンプライアンスを推進するアルコールチェックサービス～</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="企業のコンプライアンスが問われる時代にふさわしい運転前アルコールチェック&検温クラウドサービス">
-  <meta property="og:image" content="https://will0905.xsrv.jp/asarepo/lp1/img/OGP.png">
+  <meta property="og:image" content="https://saas.shinwart.co.jp/asarepo/lp1/img/OGP.png">
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://saas.shinwart.co.jp/asarepo/favicon.ico">
 
   <!-- フォント -->
@@ -125,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="hero-badge">
           <div class="hero-badge">
             <p class="hero-badge-txt">累計利用者数</p>
-            <p class="hero-badge-number">15<span class="hero-badge-unit-1">万</span><span class="hero-badge-unit">社</span><span class="hero-badge-unit sp_txt-block">以上</span></p>
+            <p class="hero-badge-number">15<span class="hero-badge-unit-1">万</span><span class="hero-badge-unit">人</span><span class="hero-badge-unit sp_txt-block">以上</span></p>
             <p class="hero-badge-bottom-txt pc_txt-block">以上</p>
           </div>
         </div>
